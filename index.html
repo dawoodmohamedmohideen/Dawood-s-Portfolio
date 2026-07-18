@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Mohideen Dawood | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="topbar">
+      <a class="brand" href="#home">Dawood<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Mohamed Mohideen Dawood • Engineering Student • Developer</p>
+          <h1>
+            I build <span id="typed-text"></span>
+          </h1>
+          <p class="hero-description">
+            I am Mohamed Mohideen Dawood, an Electronic and Computer Engineering student based in Hong Kong,
+            creating practical engineering solutions that blend hardware intuition with software execution.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">Explore Projects</a>
+            <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card">
+            <div class="orbital">
+              <div class="core"></div>
+            </div>
+            <div class="stats">
+              <div>
+                <strong>2</strong>
+                <span>Years in university</span>
+              </div>
+              <div>
+                <strong>3+</strong>
+                <span>Technical domains</span>
+              </div>
+              <div>
+                <strong>2</strong>
+                <span>Major projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>Bridging electronics, software, and real-world impact.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="glass-card">
+            <p>
+              I am currently pursuing a Bachelor of Engineering (Hons) in Electronic and Computer Engineering at Hong Kong Metropolitan University.
+              My academic and hands-on experience spans embedded systems, automation, design software, and web development.
+            </p>
+          </div>
+          <div class="glass-card accent-card">
+            <ul>
+              <li><strong>Name:</strong> Mohamed Mohideen Dawood</li>
+              <li><strong>Location:</strong> Hong Kong</li>
+              <li><strong>Personal email:</strong> dawoodmm14@gmail.com</li>
+              <li><strong>Academic email:</strong> s1377673@live.hkmu.edu.hk</li>
+              <li>HKMU Year 2 student with GPA 2.8 / 4.0</li>
+              <li>Former Treasurer of IEEE Student Branch</li>
+              <li>Lab helper supporting TEG systems and aircraft cooling pad projects</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2>Academic training with a strong engineering foundation.</h2>
+        </div>
+        <div id="education-grid" class="card-grid"></div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Hands-on work across operations, laboratories, and automation.</h2>
+        </div>
+        <div id="experience-grid" class="card-grid"></div>
+      </section>
+
+      <section id="leadership" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Leadership</p>
+          <h2>Leadership in student engineering communities.</h2>
+        </div>
+        <div id="leadership-grid" class="card-grid"></div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Core tools and capabilities.</h2>
+        </div>
+        <div id="skills-grid" class="skills-grid"></div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Projects shaped by engineering and curiosity.</h2>
+        </div>
+        <div id="projects-grid" class="projects-grid"></div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Open to collaborative opportunities.</h2>
+        </div>
+        <div class="glass-card contact-card">
+          <div>
+            <p><strong>Location:</strong> Hong Kong</p>
+            <p><strong>Personal email:</strong> dawoodmm14@gmail.com</p>
+            <p><strong>Academic email:</strong> s1377673@live.hkmu.edu.hk</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:dawoodmm14@gmail.com">Personal Email</a>
+            <a class="btn btn-secondary" href="mailto:s1377673@live.hkmu.edu.hk">Academic Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
