@@ -304,24 +304,27 @@ header {
 }
 
 .contact-card {
-  align-items: flex-start;
-  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: stretch;
+  grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
   gap: 24px;
+  padding: 28px;
 }
 
 .contact-details {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+  align-content: start;
 }
 
 .contact-bubble {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 13px 16px;
+  min-height: 74px;
   border: 1px solid rgba(20, 247, 255, 0.25);
-  border-radius: 999px;
+  border-radius: 18px;
   background: linear-gradient(135deg, rgba(20, 247, 255, 0.16), rgba(107, 124, 255, 0.18));
   color: var(--text);
   box-shadow: 0 10px 24px rgba(20, 247, 255, 0.12);
@@ -336,20 +339,30 @@ header {
   animation-delay: 0.5s;
 }
 
+.contact-bubble strong {
+  color: var(--accent-2);
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
 .contact-bubble a {
   color: var(--accent-2);
   text-decoration: none;
   font-weight: 700;
+  word-break: break-word;
 }
 
 .contact-actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
-  align-items: flex-start;
+  justify-content: center;
 }
 
 .contact-actions .btn {
+  width: 100%;
+  text-align: center;
   color: var(--text);
   border: 1px solid rgba(20, 247, 255, 0.35);
   background: linear-gradient(90deg, rgba(20, 247, 255, 0.22), rgba(107, 124, 255, 0.28));
