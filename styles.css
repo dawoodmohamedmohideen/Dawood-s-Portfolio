@@ -304,21 +304,22 @@ header {
 }
 
 .contact-card {
-  align-items: stretch;
+  align-items: start;
   grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
   gap: 24px;
   padding: 28px;
 }
 
 .contact-details {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   align-content: start;
 }
 
 .contact-bubble {
   display: flex;
+  flex: 0 1 calc(50% - 6px);
   flex-direction: column;
   gap: 4px;
   padding: 13px 16px;
@@ -329,6 +330,7 @@ header {
   color: var(--text);
   box-shadow: 0 10px 24px rgba(20, 247, 255, 0.12);
   animation: floatBubble 3.2s ease-in-out infinite;
+  overflow-wrap: anywhere;
 }
 
 .contact-bubble:nth-child(2n) {
@@ -394,6 +396,23 @@ header {
   .about-grid,
   .contact-card {
     grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .contact-details {
+    width: 100%;
+  }
+
+  .contact-bubble {
+    flex: 0 1 100%;
+    min-height: auto;
+  }
+
+  .contact-actions {
+    width: 100%;
   }
 
   .stats {
