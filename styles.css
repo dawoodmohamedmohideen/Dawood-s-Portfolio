@@ -304,19 +304,75 @@ header {
 }
 
 .contact-card {
+  align-items: flex-start;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-bubble {
+  display: inline-flex;
   align-items: center;
-  grid-template-columns: 1fr auto;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(20, 247, 255, 0.25);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(20, 247, 255, 0.16), rgba(107, 124, 255, 0.18));
+  color: var(--text);
+  box-shadow: 0 10px 24px rgba(20, 247, 255, 0.12);
+  animation: floatBubble 3.2s ease-in-out infinite;
+}
+
+.contact-bubble:nth-child(2n) {
+  animation-delay: 0.25s;
+}
+
+.contact-bubble:nth-child(3n) {
+  animation-delay: 0.5s;
+}
+
+.contact-bubble a {
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .contact-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  align-items: flex-start;
+}
+
+.contact-actions .btn {
+  color: var(--text);
+  border: 1px solid rgba(20, 247, 255, 0.35);
+  background: linear-gradient(90deg, rgba(20, 247, 255, 0.22), rgba(107, 124, 255, 0.28));
+  box-shadow: 0 12px 28px rgba(20, 247, 255, 0.16);
+}
+
+.contact-actions .btn:hover {
+  box-shadow: 0 16px 34px rgba(20, 247, 255, 0.24);
 }
 
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes floatBubble {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
   }
 }
 
